@@ -37,7 +37,7 @@ let firstName = 'Jon'
 let lastName = 'Snow'
 let age = 24
 
-let phrase = "Soy" + firstName + " " + lastName + ", " + "tengo" + age + " años y me gustan los lobos"
+let phrase = "Soy" + firstName + " " + lastName + ", " + "tengo" + age + " " + "años y me gustan los lobos"
 
 console.log(phrase)
 
@@ -48,13 +48,89 @@ const toy2 = {name: 'Rallo mcKing', price: 29};*/
 const toy1 = {name: 'Buss myYear', price: 19};
 const toy2 = {name: 'Rallo mcKing', price: 29};
 
-const totalJuguetes = toy1.price() + toy2.price()
+const totalJuguetes = toy1.price + toy2.price
 
 console.log(totalJuguetes)
 
 /*1.4 Dado el siguiente javascript, actualiza el valor de la variable globalBasePrice a 25000 
 y actualiza la propiedad finalPrice de todos los coches con el valor de su propiedad basePrice más 
-el valor de la variable globalBasePrice.
+el valor de la variable globalBasePrice.*/
+
 let globalBasePrice = 10000;
+
 const car1 = {name: 'BMW m&m', basePrice: 50000, finalPrice: 60000};
-const car2 = {name: 'Chevrolet Corbina', basePrice: 70000, finalPrice: 80000};*/
+const car2 = {name: 'Chevrolet Corbina', basePrice: 70000, finalPrice: 80000};
+
+let newGlobalBasePrice = 25000
+
+const newCar1 = car1.basePrice + newGlobalBasePrice
+const newCar2 = car2.basePrice + newGlobalBasePrice
+
+console.log(newCar1)
+console.log(newCar2)
+
+/*-------------------------------------------------------------
+------------------- Iteración #3: Operadores ------------------
+--------------------------------------------------------------*/
+
+//1.1 Multiplica 10 por 5 y muestra el resultado mediante console.
+
+const Multiplica = 10 * 5
+
+console.log(Multiplica)
+
+//1.2 Divide 10 por 2 y muestra el resultado en un console.
+
+const divide = 10 / 2
+
+console.log(divide)
+
+//1.3 Muestra mediante un console el resto de dividir 15 por 9.
+
+const resto = 15 % 9 
+
+//1.4 Usa el correcto operador de asignación que resultará en o = 15, teniendo dos variables p = 10 y j = 5.
+
+let p = 10
+let j = 5
+let o = p + j
+
+console.log(o)
+
+//1.5 Usa el correcto operador de asignación que resultará en i = 50, teniendo dos variables c = 10 y m = 5.
+
+let c = 10
+let m = 5
+let i = c * m
+console.log(i)
+
+/*-------------------------------------------------------------
+--------------------- Iteración #4: Arrays --------------------
+--------------------------------------------------------------*/
+
+//1.1 Consigue el valor "HULK" del array de avengers y muestralo por consola.
+
+const avengers = ["HULK", "SPIDERMAN", "BLACK PANTHER"];
+console.log(avengers[0])
+
+//1.2 Cambia el primer elemento de avengers a "IRONMAN"
+
+avengers.splice(0, 1, "IROMAN")
+console.log(avengers)
+
+//1.3 console numero de elementos en el array usando la propiedad correcta de Array.
+
+console.log(avengers.length)
+
+//1.4 Añade 2 elementos al array: "Morty" y "Summer". Muestra en consola el último personaje del array
+
+const rickAndMortyCharacters = ["Rick", "Beth", "Jerry"];
+rickAndMortyCharacters.push("Morty", "Summer")
+console.log(rickAndMortyCharacters)
+
+const found = rickAndMortyCharacters.findlast(Element)
+
+
+
+
+
