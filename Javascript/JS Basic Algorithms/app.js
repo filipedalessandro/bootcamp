@@ -125,12 +125,50 @@ console.log(avengers.length)
 //1.4 Añade 2 elementos al array: "Morty" y "Summer". Muestra en consola el último personaje del array
 
 const rickAndMortyCharacters = ["Rick", "Beth", "Jerry"];
-rickAndMortyCharacters.push("Morty", "Summer")
+rickAndMortyCharacters.push("Morty", "Summer");
 console.log(rickAndMortyCharacters)
 
-const found = rickAndMortyCharacters.findlast(Element)
+//TODAVIA NO
+//1.5 Elimina el último elemento del array y muestra el primero y el último por consola.
+const rickAndMortyCharacters = ["Rick", "Beth", "Jerry", "Morty", "Summer", "Lapiz Lopez"];
+// TODAVIA NO
+//1.6 Elimina el segundo elemento del array y muestra el array por consola.
+const rickAndMortyCharacters = ["Rick", "Beth", "Jerry", "Morty", "Summer", "Lapiz Lopez"];
 
 
 
+/*-------------------------------------------------------------
+----------------- Iteración #5: Condicionales -----------------
+--------------------------------------------------------------*/
+/* ejemplo
+if(number1 === 10){
+    console.log('number1 es estrictamente igual a 10')
+}*/
 
+const number1 = 10;
+const number2 = 20;
+const number3 = 2;
 
+if (/* COMPLETAR */) {
+  console.log("number2 dividido entre number1 es igual a 2");
+}
+
+if (/* COMPLETAR */) {
+  console.log("number1 es estrictamente distinto a number2");
+}
+
+if (/* COMPLETAR */) {
+  console.log("number3 es distinto number1");
+}
+
+if (/* COMPLETAR */) {
+  console.log("number3 por 5 es igual a number1");
+}
+
+if (/* COMPLETAR */) {
+  console.log("number3 por 5 es igual a number1 Y number1 por 2 es igual a number2");
+}
+
+if (/* COMPLETAR */) {
+  console.log("number2 entre 2 es igual a number1 O number1 entre 5 es igual a number3");
+}

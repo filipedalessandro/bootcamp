@@ -10,7 +10,7 @@ const array2 = ["patata", true, {name: "cosa", id:23}]
 console.log(array1.at(2))
 
 //-----normalmente ahora se utiliza la siguiente forma para acceder a los eleentos de un array
-console.log(arra1.[2])
+console.log(array1.[2])
 //setorna a mesma coisa 3
 
 //-----concat
@@ -47,14 +47,14 @@ console.log(arrayfill.fill("#",2,4))
 
 // ----flat - aplana las dimensiones de un array y el parametro que acepta es la cantidad de niveles que tiene que aplanar
 
-const.arrayflat = [1,2,3,[4,5,[6,7]]];
+const.arrayFlat = [1,2,3,[4,5,[6,7]]];
 // posicoes 0, 1, 2 e 3 (sendo o 3 os numeros 4 e 5 posicao 0 e 1)
 
-console.log(arrayflat.flat());
+console.log(arrayFlat.flat());
 //Retorna un array normal sem ser um array dentro do outro [1, 2, 3, 4, 5]
-console.log(arrayflat.flat(2));
+console.log(arrayFlat.flat(2));
 //retorna un array normal sem ser um array dentro de otro (2 niveis neste caso)
-console.log(arrayflat.flat[3][0])
+console.log(arrayFlat.flat[3][0])
 //Retorna o numero 4
 
 //-----includes _ o metodo devolve true o false se el array inclui ou nao o elemento passado por parametro
