@@ -124,16 +124,17 @@ console.log(avengers.length)
 
 //1.4 Añade 2 elementos al array: "Morty" y "Summer". Muestra en consola el último personaje del array
 
-const rickAndMortyCharacters = ["Rick", "Beth", "Jerry"];
-rickAndMortyCharacters.push("Morty", "Summer");
-console.log(rickAndMortyCharacters)
+const rickAnd = ["Rick", "Beth", "Jerry"];
+rickAnd.push("Morty", "Summer");
+console.log(rickAnd)
+
 
 //TODAVIA NO
 //1.5 Elimina el último elemento del array y muestra el primero y el último por consola.
-const rickAndMortyCharacters = ["Rick", "Beth", "Jerry", "Morty", "Summer", "Lapiz Lopez"];
+const rickAndMorty = ["Rick", "Beth", "Jerry", "Morty", "Summer", "Lapiz Lopez"];
 // TODAVIA NO
 //1.6 Elimina el segundo elemento del array y muestra el array por consola.
-const rickAndMortyCharacters = ["Rick", "Beth", "Jerry", "Morty", "Summer", "Lapiz Lopez"];
+const rickAnd2 = ["Rick", "Beth", "Jerry", "Morty", "Summer", "Lapiz Lopez"];
 
 
 
@@ -149,26 +150,86 @@ const number1 = 10;
 const number2 = 20;
 const number3 = 2;
 
-if (/* COMPLETAR */) {
-  console.log("number2 dividido entre number1 es igual a 2");
+if (number2/number1 == 2) {
+  console.log(number2/number1);
 }
 
-if (/* COMPLETAR */) {
-  console.log("number1 es estrictamente distinto a number2");
+if (number1 !== number2) {
+  console.log(number1 !== number2);
 }
 
-if (/* COMPLETAR */) {
-  console.log("number3 es distinto number1");
+if (number3 != number1) {
+  console.log(number3 != number1);
 }
 
-if (/* COMPLETAR */) {
-  console.log("number3 por 5 es igual a number1");
+if (number2 / 5 == number1) {
+  console.log(number2 / 5 == number1);
 }
 
-if (/* COMPLETAR */) {
-  console.log("number3 por 5 es igual a number1 Y number1 por 2 es igual a number2");
+if (number3 / 5 == number1 && number1 / 2 == number2) {
+  console.log(number3 / 5 == number1 && number1 / 2 == number2);
 }
 
-if (/* COMPLETAR */) {
+if (number2 / 2 == number1 || number1 / 5 == number3) {
   console.log("number2 entre 2 es igual a number1 O number1 entre 5 es igual a number3");
 }
+
+/*-------------------------------------------------------------
+-------------------- Iteración #6: Bucles ---------------------
+--------------------------------------------------------------*/
+
+/*1.1 Crea un bucle for que vaya desde 0 a 9 y muestralo por consola.*/
+
+let ejercicio1 = [0,1,2,3,4,5,6,7,8,9]
+
+for (let j = 0; j < ejercicio1.length; j++) {
+  let numbers1 = ejercicio1[j];
+  console.log(j)
+}
+
+//or
+
+function bucleWhile(num){
+  let i = 0
+  while (i < num) {
+    console.log(i)
+    i++
+  }
+}
+bucleWhile(10)
+
+//or
+
+function bucleFor(num){
+  for (let i = 0; i<num ; i++){
+    console.log(i)
+  }
+}
+bucleFor(10)
+
+/*1.2 Crea un bucle for que vaya desde 0 a 9 y muestralo por consola solo 
+cuando el resto del numero dividido entre 2 sea 0.*/
+
+function bucleIf(num){
+  for (let i = 0; i<num ; i++){
+    if(i % 2 == 0){
+      console.log(i)
+    }
+  }
+}
+bucleIf(9)
+
+
+/*1.3 Crea un bucle para conseguir dormir contando ovejas. 
+Este bucle tiene que dar 10 vueltas, es decir, 10 console.log.
+Muestra por consola un mensaje diciendo 'Intentando dormir 🐑' en cada vuelta del bucle 
+y cambia el mensaje en la décima vuelta a 'Dormido!'.*/
+
+
+var cs = 1
+var ov = "Intentando dormir 🐑"
+do {
+  console.log(ov)
+  cs++
+} while (cs < 10)
+console.log ("Dormindo!")
